@@ -3,6 +3,8 @@ import { useImage } from '../../hooks/useImage'
 import HeaderEditForm from '../HeaderEditForm/HeaderEditForm'
 import styles from './Flip.module.css'
 import { usePostFecht } from '../../hooks/usePostFetch'
+import flipv from '../../assets/flipv.svg'
+import fliph from '../../assets/fliph.svg'
 
 const Flip = () => {
 
@@ -73,7 +75,7 @@ const Flip = () => {
               onClick={flipImage}
             >
               <img
-                src='src/assets/flipv.svg'
+                src={flipv}
                 alt='flip vertical'
               />
               Vertical
@@ -84,7 +86,7 @@ const Flip = () => {
               onClick={flopImage}
             >
               <img
-                src='src/assets/fliph.svg'
+                src={fliph}
                 alt='flip horizontal'
               />
               Horizontal

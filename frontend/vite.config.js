@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'http://sy7zdxzhremlc7mo6wedtopcoe0qtwfa.lambda-url.eu-west-3.on.aws',
         changeOrigin: true
       },
     },

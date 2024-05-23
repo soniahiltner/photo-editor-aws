@@ -3,6 +3,7 @@ import { useImage } from '../../hooks/useImage'
 import { useRef } from 'react'
 import { Cropper } from 'react-advanced-cropper'
 import 'react-advanced-cropper/dist/style.css'
+import placeholder from '../../assets/placeholder.webp'
 
 const Image = () => {
   const {
@@ -21,7 +22,6 @@ const Image = () => {
 
   const cropperRef = useRef(null)
 
-  const placeholder = '/src/assets/placeholder.webp'
 
   const handleCrop = () => {
     if (cropperRef.current) {

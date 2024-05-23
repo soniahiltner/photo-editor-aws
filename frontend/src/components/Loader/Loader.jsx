@@ -1,3 +1,5 @@
+import loader from '../../assets/loader.svg'
+
 const Loader = () => {
   return (
     <div
@@ -5,7 +7,7 @@ const Loader = () => {
       data-testid='loader'
     >
       <img
-        src='src/assets/loader.svg'
+        src={loader}
         alt='loader'
       />
     </div>
