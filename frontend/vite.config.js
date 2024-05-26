@@ -3,5 +3,13 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()]
+  plugins: [react()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://sy7zdxzhremlc7mo6wedtopcoe0qtwfa.lambda-url.eu-west-3.on.aws',
+        changeOrigin: true
+      },
+    },
+  },
 })

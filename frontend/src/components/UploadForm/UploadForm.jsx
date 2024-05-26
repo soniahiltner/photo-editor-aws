@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import styles from './UploadForm.module.css'
 import { useImage } from '../../hooks/useImage'
+import { API_URL } from '../../../api'
 
 const fileTypes = [
   'image/gif',
@@ -11,7 +12,7 @@ const fileTypes = [
   'image/webp'
 ]
 
-const url = `${import.meta.env.VITE_API_URL}/upload`
+const url = `${API_URL}/upload`
 
 const UploadForm = () => {
   const form = useRef()
