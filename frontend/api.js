@@ -1,1 +1,1 @@
-export const API_URL = 'http://ec2-13-38-113-252.eu-west-3.compute.amazonaws.com:8000/api/image'
+export const API_URL = 'https://sy7zdxzhremlc7mo6wedtopcoe0qtwfa.lambda-url.eu-west-3.on.aws/api/image'
